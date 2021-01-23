@@ -1,0 +1,143 @@
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+html {
+    background-color: grey;
+}
+
+form {
+    display: flex;
+    width: 600px;
+    border: honeydew 2px solid;
+    flex-direction: column;
+    margin: auto;
+}
+
+form input[type="submit"] {
+    margin: 20px 150px 20px 150px;
+    border-radius: 10px;
+    font-size: x-large;
+    cursor: pointer;
+    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    border: black 3px solid;
+}
+
+form input[type="submit"]:hover {
+    border: white 3px solid;
+}
+
+form input[type="text"]:hover,
+form input[type="password"]:hover {
+    border: green 3px solid;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    margin: 20px 50px 10px 50px;
+    height: 30px;
+    font-size: x-large;
+    border-radius: 7px;
+    border: blue 3px solid;
+}
+
+ol {
+    margin: auto;
+    width: 700px;
+}
+
+li {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+li:nth-child(even) {
+    background-color: rgba(204, 204, 204, 0.486);
+    color: ghostwhite;
+}
+
+li div {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+li div span:first-child {
+    margin-right: 15px;
+    font-size: xx-large;
+}
+
+li div span:nth-child(2) {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+li div span:nth-child(3) {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.checked {
+    background: #888;
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 1000px) {
+    ol {
+        margin: 0%;
+        width: 90%;
+    }
+    form {
+        margin: 0%;
+        width: 100%;
+    }
+    form input[type="text"],
+    form input[type="password"] {
+        margin: 0px 20px 0px 10px;
+    }
+    form input[type="submit"] {
+        margin: 10px 50px 0px 50px;
+    }
+}
+
+.userAdded {
+    color: green;
+    background-color: ivory;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    border: lawngreen 3px solid;
+    margin-top: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.userexist {
+    color: red;
+    background-color: ivory;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    border: red 3px solid;
+    margin-top: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.userNotExist {
+    color: red;
+    background-color: ivory;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    border: red 3px solid;
+    margin-top: 20px;
+    padding: 5px;
+    display: none;
+}
+
+form span {
+    color: blue;
+    font-size: 20px;
+}
